@@ -2,20 +2,36 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   currentAccount: {
-    id: "1",
-    username: "Oguzhan Altun",
-    fullname: "steliouz",
+    id: 1,
+    username: "AltcoinRehber",
+    fullName: "Altcoin Rehber",
     avatar:
       "https://pbs.twimg.com/profile_images/1596845729699581953/zLLEC5Zb_400x400.jpg",
   },
-  accounts: [],
+  accounts: [
+    {
+      id: 1,
+      username: "Altcoin Rehber",
+      fullName: "AltcoinRehber",
+      avatar:
+        "https://pbs.twimg.com/profile_images/1596845729699581953/zLLEC5Zb_400x400.jpg",
+    },
+    {
+      id: 2,
+      username: "altunoguzhan_",
+      fullName: "Oğuzhan Altun",
+      avatar:
+        "https://pbs.twimg.com/profile_images/1595102074307596291/LHqS7m2X_400x400.jpg",
+    },
+  ],
 };
 
 const auth = createSlice({
   name: "auth",
   initialState,
   reducers: {
-    _addAccounts: (state, action) => {
+    // state manipule etme metodlari
+    _addAccount: (state, action) => {
       state.accounts.push(action.payload);
     },
     _removeAccount: (state, action) => {
@@ -32,6 +48,5 @@ const auth = createSlice({
   },
 });
 
-export const { _addAccounts, _removeAccount, _setCurrentAccount } =
-  auth.actions;
+export const { _addAccount, _setCurrentAccount, _removeAccount } = auth.actions;
 export default auth.reducer;

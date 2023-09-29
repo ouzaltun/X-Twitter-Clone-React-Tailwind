@@ -157,9 +157,7 @@ export const mainMenu = [
     },
   },
   {
-    path: () => {
-      return `/${store.getState()?.auth?.currentAccount?.username}`;
-    },
+    path: `/${store.getState()?.auth?.currentAccount?.username}`,
     title: "Profil",
     icon: {
       active: (
@@ -179,5 +177,95 @@ export const mainMenu = [
         </svg>
       ),
     },
+  },
+];
+
+export const topics = [
+  {
+    title: "Türkiye tarihinde gündemde",
+    topic: {
+      type: "tag",
+      value: "dilanpolat",
+    },
+  },
+  {
+    title: "Türkiye tarihinde gündemde",
+    topic: {
+      type: "query",
+      value: "Starlink",
+    },
+    postCount: 15640,
+  },
+  {
+    title: "Türkiye tarihinde gündemde",
+    topic: {
+      type: "tag",
+      value: "dilanpolat",
+    },
+  },
+  {
+    title: "Türkiye tarihinde gündemde",
+    topic: {
+      type: "query",
+      value: "Starlink",
+    },
+    postCount: 15640,
+  },
+  {
+    title: "Türkiye tarihinde gündemde",
+    topic: {
+      type: "tag",
+      value: "dilanpolat",
+    },
+  },
+  {
+    title: "Türkiye tarihinde gündemde",
+    topic: {
+      type: "query",
+      value: "Starlink",
+    },
+    postCount: 15640,
+  },
+  {
+    title: "Türkiye tarihinde gündemde",
+    topic: {
+      type: "tag",
+      value: "dilanpolat",
+    },
+  },
+  {
+    title: "Türkiye tarihinde gündemde",
+    topic: {
+      type: "query",
+      value: "Starlink",
+    },
+    postCount: 15640,
+  },
+];
+
+export const colors = [
+  {
+    primary: "#1d9bf0",
+    secondary: "#8ecdf8",
+  },
+  {
+    primary: "#ffd400",
+    secondary: "#ffea80",
+  },
+  {
+    primary: "#f91880",
+    secondary: "#fc8cc0",
+  },
+  {
+    primary: "#7856ff",
+    secondary: "#bcabff",
+  },
+  {
+    primary: "#ff7a00",
+    secondary: "#ffbd80",
+  },
+  {
+    primary: "#00ba7c",
+    secondary: "#80ddbe",
   },
 ];
