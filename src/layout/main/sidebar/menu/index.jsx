@@ -26,7 +26,9 @@ function Menu() {
                   {!isActive && menu.icon.passive}
                   {isActive && menu.icon.active}
                 </div>
-                <div className="mr-4 ml-5 text-xl">{menu.title}</div>
+                <div className="mr-4 ml-5 text-xl leading-[24px]">
+                  {menu.title}
+                </div>
               </div>
             )}
           </NavLink>
